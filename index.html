@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>首頁產品輪播區塊</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <section class="product-section">
+    <div class="section-header">
+      <div>
+        <h2 class="section-title">熱門商品</h2>
+        <p class="section-subtitle">為你精選的本週推薦</p>
+      </div>
+      <div class="nav-buttons">
+        <button id="prevBtn" class="nav-btn" aria-label="上一個">
+          <svg viewBox="0 0 24 24" width="18" height="18"><path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <button id="nextBtn" class="nav-btn" aria-label="下一個">
+          <svg viewBox="0 0 24 24" width="18" height="18"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="carousel-viewport">
+      <div class="carousel-track" id="track">
+
+        <article class="product-card">
+          <div class="product-image image-1">
+            <svg viewBox="0 0 48 48" width="40" height="40"><path fill="currentColor" d="M24 6a14 14 0 00-14 14v10a4 4 0 004 4h2V22h-4a12 12 0 0124 0h-4v12h2a4 4 0 004-4V20A14 14 0 0024 6z"/></svg>
+          </div>
+          <div class="product-info">
+            <p class="product-name">無線降噪耳機</p>
+            <p class="product-price">NT$ 2,980</p>
+            <button class="add-btn">加入購物車</button>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image image-2">
+            <svg viewBox="0 0 48 48" width="40" height="40"><rect x="14" y="10" width="20" height="28" rx="4" fill="none" stroke="currentColor" stroke-width="2.5"/><circle cx="24" cy="24" r="6" fill="none" stroke="currentColor" stroke-width="2.5"/></svg>
+          </div>
+          <div class="product-info">
+            <p class="product-name">智慧手錶 Pro</p>
+            <p class="product-price">NT$ 5,490</p>
+            <button class="add-btn">加入購物車</button>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image image-3">
+            <svg viewBox="0 0 48 48" width="40" height="40"><rect x="6" y="14" width="36" height="24" rx="3" fill="none" stroke="currentColor" stroke-width="2.5"/><circle cx="24" cy="26" r="7" fill="none" stroke="currentColor" stroke-width="2.5"/><rect x="14" y="10" width="8" height="4" fill="currentColor"/></svg>
+          </div>
+          <div class="product-info">
+            <p class="product-name">運動攝影機</p>
+            <p class="product-price">NT$ 3,290</p>
+            <button class="add-btn">加入購物車</button>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image image-4">
+            <svg viewBox="0 0 48 48" width="40" height="40"><rect x="8" y="6" width="24" height="36" rx="4" fill="none" stroke="currentColor" stroke-width="2.5"/><circle cx="20" cy="35" r="1.5" fill="currentColor"/></svg>
+          </div>
+          <div class="product-info">
+            <p class="product-name">無線充電盤</p>
+            <p class="product-price">NT$ 990</p>
+            <button class="add-btn">加入購物車</button>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image image-5">
+            <svg viewBox="0 0 48 48" width="40" height="40"><rect x="12" y="6" width="24" height="36" rx="6" fill="none" stroke="currentColor" stroke-width="2.5"/><circle cx="24" cy="24" r="6" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+          </div>
+          <div class="product-info">
+            <p class="product-name">藍牙喇叭</p>
+            <p class="product-price">NT$ 1,590</p>
+            <button class="add-btn">加入購物車</button>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <div class="dots" id="dots"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
